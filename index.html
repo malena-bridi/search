@@ -4,37 +4,28 @@
 <head>
     <title>Googlen't</title>
     <link rel="stylesheet" href="/style.css">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
 
 <body>
-    <div id="topBar">
-        <a href="">Images</a>
-        <a href="">Advanced Search</a>
-    </div>
-    <div id="centerDiv">
-        <div id="logoDiv">
-            <h1><span style="color: #4285F4">G</span>
-                <span style="color: #EA4333">o</span>
-                <span style="color: #FBBC05">o</span>
-                <span style="color: #4285F4">g</span>
-                <span style="color: #34A85A">l</span>
-                <span style="color: #EA4333">e</span>
-                <span style="color: #FBBC05">n</span>
-                <span style="color: #4285F4">'</span>
-                <span style="color: #34A85A">t</span>
-            </h1>
+    <div class="topBar">
+        <div class="rightLinks">
+            <a href="/images.html">Images</a>
+            <a href="/advanced_search.html">Advanced Search</a>
         </div>
-        <div id="formDiv">
+    </div>
+    <div class="centerDiv">
+        <iframe src="/logo.html" class="logoIframe"></iframe>
+        <div class="formDiv">
             <form action="https://google.com/search">
-                <div id="searchBarDiv">
-                    <div id="lensIconDiv">
-                        <img src="/lens.svg" id="lensIcon">
+                <div class="searchBarDiv">
+                    <div class="lensIconDiv">
+                        <img src="/lens.svg" class="lensIcon">
                     </div>
-                    <input type="text" name="q" id="searchBar">
+                    <input type="text" name="q" class="searchBar">
                 </div>
-                <div id="buttonsDiv">
+                <div class="buttonsDiv">
                     <div class="buttonDiv">
                         <input type="submit" value="Google Search" class="searchButton">
                     </div>
@@ -42,9 +33,8 @@
                         <input type="submit" value="I'm Feeling Lucky" class="searchButton">
                     </div>
                 </div>
+            </form>
         </div>
-        </form>
-    </div>
     </div>
 </body>
 
