@@ -23,7 +23,7 @@ $search-bar-hover-shadow: rgba(32, 33, 36, 0.28);
   src: url('/Product\ Sans\ Regular.ttf') format('truetype');
 }
 
-// Styles
+// General Styles
 html {
   height: 100vh;
 }
@@ -46,6 +46,7 @@ h1 {
   margin: 0;
 }
 
+// Index and Images Styles
 .topBar {
   padding: 1.5%;
   width: 100%;
@@ -85,108 +86,73 @@ h1 {
     border: none;
     margin-bottom: 10px;
   }
+
+  .searchBarDiv {
+    border: 1px solid $search-bar-border;
+    border-radius: 24px;
+    height: 6vh;
+    width: 584px;
+    margin: auto;
+    display: flex;
+    min-height: 30px;
+
+    &:hover {
+      box-shadow: 0 1px 6px $search-bar-hover-shadow;
+      border-color: transparent;
+    }
+
+    .lensIconDiv {
+      width: 7%;
+      @include flex-center;
+
+      .lensIcon {
+        width: 35%;
+        margin: auto;
+      }
+    }
+
+    .searchBar {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      border: none;
+      background: none;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .buttonsDiv {
+    padding-top: 1.5%;
+
+    .buttonDiv {
+      display: inline-block;
+
+      .searchButton {
+        background-color: $search-button-bg;
+        border: 1px solid $search-button-border;
+        border-radius: 4px;
+        color: #3c4043;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        margin: 0 0.3125rem;
+
+        &:hover {
+          box-shadow: 0 1px 1px $search-button-hover-shadow;
+          border: 1px solid $search-button-hover-border;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
+// Logo
 .logoDiv {
   text-align: center;
 }
 
-.searchBarDiv {
-  border: 1px solid $search-bar-border;
-  border-radius: 24px;
-  height: 44px;
-  width: 584px;
-  margin: auto;
-  display: flex;
-  min-height: 30px;
-
-  &:hover {
-    box-shadow: 0 1px 6px $search-bar-hover-shadow;
-    border-color: transparent;
-  }
-}
-
-.lensIconDiv {
-  width: 7%;
-  @include flex-center;
-}
-
-.lensIcon {
-  width: 35%;
-  margin: auto;
-}
-
-.searchBar {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: none;
-  background: none;
-  font-size: 1rem;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.buttonsDiv {
-  padding-top: 1.5%;
-}
-
-.buttonDiv {
-  display: inline-block;
-}
-
-.searchButton {
-  background-color: $search-button-bg;
-  border: 1px solid $search-button-border;
-  border-radius: 4px;
-  color: #3c4043;
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
-  margin: 0 0.3125rem;
-
-  &:hover {
-    box-shadow: 0 1px 1px $search-button-hover-shadow;
-    border: 1px solid $search-button-hover-border;
-    cursor: pointer;
-  }
-}
-
-// Advanced Search Styles
-.smallTitleDiv {
-  padding-left: 1.5%;
-
-  .smallTitle {
-    font-size: 1.5rem;
-    letter-spacing: -0.15rem;
-  }
-}
-
 // Media Queries
-@media (max-width: 750px) {
-  .topBar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .centerDiv {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .searchBarDiv {
-    width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 15vw;
-    letter-spacing: -0.11em;
-  }
-
-  .searchBarDiv {
-    height: auto;
-  }
-}
