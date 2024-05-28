@@ -53,7 +53,7 @@ body {
       color: $font-color;
       font-size: 0.8rem;
       display: inline-block;
-      padding-right: 25px;
+      padding-right: 1.6vw;
 
       &:hover {
         text-decoration: underline;
@@ -63,21 +63,21 @@ body {
 }
 
 .centerDiv {
-  width: 75%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 55px;
   padding: 2%;
   text-align: center;
+  width: min(584px, 90%);
 
   .logoImg {
-    margin-bottom: 3vh;
+    width: min(90%, 272px);
+    margin-bottom: 1.45vw;
   }
 
   .searchBarDiv {
     border: 1px solid $search-bar-border;
     border-radius: 24px;
-    height: 6vh;
-    width: 584px;
+    height: 2.86vw;
     margin: auto;
     display: flex;
     min-height: 30px;
@@ -112,7 +112,7 @@ body {
   }
 
   .buttonsDiv {
-    padding-top: 1.5%;
+    padding-top: 4%;
 
     .buttonDiv {
       display: inline-block;
@@ -133,5 +133,24 @@ body {
         }
       }
     }
+  }
+}
+
+// Media Queries
+@media (max-width: 750px) {
+  .centerDiv .buttonsDiv .buttonDiv .searchButton {
+    margin: unset;
+  }
+}
+
+@media (max-width: 303.5px) {
+  .centerDiv .buttonsDiv .buttonDiv .searchButton {
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-height: 300px) {
+  .centerDiv {
+    margin-top: unset;
   }
 }
