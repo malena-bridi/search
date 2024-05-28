@@ -17,18 +17,30 @@
             <h2>Advanced Search</h2>
         </div>
     </div>
-    <div class="leftDiv">
+    <div class="leftDiv bottomDiv">
+        <h3>Find pages with...</h3>
+        <h4>To do this in the search box.</h4>
         <form>
-            <h3>Find pages with...</h3>
             <label>all these words:</label>
-            <input type="text"><br>
+            <input type="text">
+            <div class="exp">Type the important words: <span>tri-colour rat terrier</span></div><br>
+
             <label>this exact word or phrase:</label>
-            <input type="text"><br>
+            <input type="text">
+            <div class="exp">Put exact words in quotes: <span>"rat terrier"</span></div><br>
+
             <label>any of these words:</label>
-            <input type="text"><br>
+            <input type="text">
+            <div class="exp">Type OR between all the words you want: <span>miniature OR standard</span></div><br>
+
             <label>none of these words:</label>
-            <input type="text"><br>
-            <button type="submit" id="advanced_search_button">Advanced Search</button>
+            <input type="text">
+            <div class="exp lastExp">Put a minus sign just before words that you don't want:
+                <span>-rodent, -"Jack Russell"</span></div><br>
+
+            <div class="advancedSearchButtonDiv">
+                <button type="submit" id="advancedSearchButton">Advanced Search</button>
+            </div>
         </form>
     </div>
 </body>
