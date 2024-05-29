@@ -183,6 +183,7 @@ body {
     font-size: min(13px, 2.5vw);
     display: inline-block;
     width: 15%;
+    box-sizing: border-box;
   }
 
   input {
@@ -252,10 +253,22 @@ body {
 
 // Media Queries
 @media (max-width: 1360px) {
-  .leftDiv .exp,
-  .leftDiv .lastExp, // Agregado para mayor especificidad
-  .leftDiv h4 {
-    display: none;
+  .leftDiv {
+    width: 100%;
+
+    .exp,
+    .lastExp,
+    h4 {
+      display: none;
+    }
+
+    label {
+      width: 30%;
+    }
+
+    .advancedSearchButtonDiv {
+      width: 80%;
+    }
   }
 
   h4 {
@@ -266,14 +279,6 @@ body {
 @media (max-width: 750px) {
   .centerDiv .buttonsDiv .buttonDiv .searchButton {
     margin: unset;
-  }
-
-  .leftDiv {
-    width: 100%;
-
-    label {
-      width: 35%;
-    }
   }
 }
 

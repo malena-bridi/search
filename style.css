@@ -139,6 +139,7 @@ body {
   font-size: min(13px, 2.5vw);
   display: inline-block;
   width: 15%;
+  box-sizing: border-box;
 }
 .leftDiv input {
   height: 25px;
@@ -198,10 +199,19 @@ body {
 }
 
 @media (max-width: 1360px) {
+  .leftDiv {
+    width: 100%;
+  }
   .leftDiv .exp,
   .leftDiv .lastExp,
   .leftDiv h4 {
     display: none;
+  }
+  .leftDiv label {
+    width: 30%;
+  }
+  .leftDiv .advancedSearchButtonDiv {
+    width: 80%;
   }
   h4 {
     display: none;
@@ -210,12 +220,6 @@ body {
 @media (max-width: 750px) {
   .centerDiv .buttonsDiv .buttonDiv .searchButton {
     margin: unset;
-  }
-  .leftDiv {
-    width: 100%;
-  }
-  .leftDiv label {
-    width: 35%;
   }
 }
 @media (max-width: 303.5px) {
