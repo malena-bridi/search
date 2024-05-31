@@ -6,6 +6,12 @@ Front-end designed to function just like Google, where users can perform searche
 <img src="https://sass-lang.com/assets/img/styleguide/seal-color.png" width="15" height="15"> SASS
 
 ## Preview
-![Homepage preview](https://github.com/malena-bridi/googlent/assets/134395414/bf69c2f5-f95c-4a1b-9f0b-d5f90a814096)
-![Images page preview](https://github.com/malena-bridi/googlent/assets/134395414/9a4f070e-f8aa-4ca6-9ea2-e8d84f4d6807)
-![Advanced Search page preview](https://github.com/malena-bridi/googlent/assets/134395414/52b4ea99-7edd-4ca3-a5ef-673883cfdaaa)
+<div align="center">
+  <img src="https://github.com/malena-bridi/googlent/assets/134395414/bf69c2f5-f95c-4a1b-9f0b-d5f90a814096" alt="Homepage preview" style="width:100%; margin:0; padding:0;"/>
+</div>
+<div align="center">
+  <img src="https://github.com/malena-bridi/googlent/assets/134395414/9a4f070e-f8aa-4ca6-9ea2-e8d84f4d6807" alt="Images page preview" style="width:100%; margin:0; padding:0;"/>
+</div>
+<div align="center">
+  <img src="https://github.com/malena-bridi/googlent/assets/134395414/52b4ea99-7edd-4ca3-a5ef-673883cfdaaa" alt="Advanced Search page preview" style="width:100%; margin:0; padding:0;"/>
+</div>
